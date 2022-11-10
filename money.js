@@ -58,6 +58,7 @@ let currency_symbol = {
   GBP: "GBP",
   USD: "US",
   UYU: "UY",
+  ZWD: "ZW",
 };
 
 //Accessing the SELECT TAG associated with "FROM COUNTRY"
@@ -138,15 +139,13 @@ function inputvalue() {
       //Obtaining result from "FROMCURRENCY.VALUE" when "TOCURRENCY.VALUE" is entered
       const Exchangerate = json.conversion_rates[Tocurrency.value];
       const total = (value * Exchangerate).toFixed(2);
-
       //Accessing the "EXCHANGE RATE TXT" HTML TAG for inserting the result into
-
       const Exchangeratetxt = document.getElementById("Exchangeratetxt");
       Exchangeratetxt.innerText = `${value} ${Fromcurrency.value} = ${total}  ${Tocurrency.value}`;
+    })
+    .catch(() => {
+      Exchangeratetxt.innerText = alert("Something went wrong");
     });
-  .catch ( () => {
-    Exchangeratetxt.innerText = alert("Something went wrong")
-  })
 }
 
 function voiceout() {
@@ -163,3 +162,4 @@ function voiceout() {
 
   window.speechSynthesis.speak(speech);
 }
+
