@@ -58,7 +58,6 @@ let currency_symbol = {
   GBP: "GBP",
   USD: "US",
   UYU: "UY",
-  ZWD: "ZW",
 };
 
 //Accessing the SELECT TAG associated with "FROM COUNTRY"
@@ -145,6 +144,9 @@ function inputvalue() {
       const Exchangeratetxt = document.getElementById("Exchangeratetxt");
       Exchangeratetxt.innerText = `${value} ${Fromcurrency.value} = ${total}  ${Tocurrency.value}`;
     });
+  .catch ( () => {
+    Exchangeratetxt.innerText = alert("Something went wrong")
+  })
 }
 
 function voiceout() {
