@@ -47,16 +47,16 @@ label {
 /*/THE INPUT IN AMOUNT CONTAINER /*/
 
 input {
-  background-color: white;
-  box-shadow: inset 10px 10px 15px #bcbcbc, inset -10px -10px 15px #7d7d7d;
-  height: 50px;
-  width: 276px;
-  outline: none;
-  border: none;
-  color: rgb(11, 11, 11);
-  font-size: 22px;
-  font-weight: bold;
-  border-radius: 4px;
+     height: 50px;
+    width: 276px;
+    outline: none;
+    color: rgb(11, 11, 11);
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: solid;
+    background-color: transparent;
+    border-width: thin;
 }
 
 /*/THIS STYLES SEE THROUGH ALL SECTION TAG/*/
