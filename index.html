@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./money.css">
+    <title>Currency converter</title>
+</head>
+<body>
+     <!--MAIN TAG for holding all the elements-->
+    <div class="main">
+        <div>
+            <h2>Currency Converter</h2>
+         </div>
+         <!--AMOUNT basically carries INPUT AND LABEL TAGS in a container-->
+         <div class="Amount">
+          <label for="">Enter Amount</label>
+          <input type="text" value="1" id="input">
+         </div>
+
+       <!--DROPLIST stores everything in "SECTION-TAG"-->
+    <div class="Droplist"> 
+         <div>
+          <section>
+             <!--money to convert FROM-->
+                <div class="country">
+                    <label for="country">Country</label>
+                    <div><img id="USA" src="https://flagcdn.com/us.svg" alt="flag"></div>
+                </div>
+
+                <p>
+                 <!--FROM COUNTRY-->
+                 <h3>from</h3>
+                </p>
+
+                <div class="currency-div">
+                    <label for="Currency">Currency</label>
+                    <select id="Fromcurrency">
+                    </select> 
+                </div>
+            </section> 
+
+           <!--EXCHNAGE IMG-->
+           <div class="img-div">
+            <img class="exchange-img" src="./exchange.png" alt="">
+               <div>
+
+                <section>
+                    <!--money to convert TO--> 
+                    <div class="country">
+                        <label for="country">Country</label>
+                       <!--COUNTRYFLAG IMG--> 
+                        <div><img id="NGN" src="https://flagcdn.com/ng.svg" alt="flag"></div>
+                    </div>
+    
+                    <p>
+                        <h3>To</h3>
+                    </p>
+                      <!--currency-div--> 
+                    <div class="currency-div">
+                        <label for="Currency">Currency</label>
+                        <select id="Tocurrency">
+                        </select> 
+                    </div>
+                </section> 
+               </div>
+
+              <!--result after conversion-->
+            <div class="money">
+                <p id="Exchangeratetxt">1USD = 436.92NGN</p>
+                 </div>
+                
+                <!--exchange button-->
+                 <div class="Rate">
+                    <button id="convert">Exchange Rate</button>
+                 </div>
+
+
+         </div>
+    </div>
+
+    <script src="./money.js"></script>
+</body>
+</html>
